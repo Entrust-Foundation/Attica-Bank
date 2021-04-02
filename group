@@ -68,4 +68,3 @@ dhcp:x:993:
 geoclue:x:992:
 privoxy:x:42:
 xmms2:x:991:
-flatpak:x:990:
