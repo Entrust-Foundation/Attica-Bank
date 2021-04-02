@@ -1,6 +1,6 @@
 # GRUB boot loader configuration
 
-GRUB_DEFAULT="Arch Linux, with Linux linux-ck-nehalem"
+GRUB_DEFAULT="Advanced options for Arch Linux>Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)"
 GRUB_TIMEOUT="30"
 GRUB_DISTRIBUTOR="Arch"
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
