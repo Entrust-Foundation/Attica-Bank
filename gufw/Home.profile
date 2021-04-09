@@ -1,5 +1,5 @@
 [fwBasic]
-status = disabled
+status = enabled
 incoming = reject
 outgoing = allow
 routed = disabled
