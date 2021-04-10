@@ -1,9 +1,9 @@
 # GRUB boot loader configuration
 
-GRUB_DEFAULT="Advanced options for Arch Linux>Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)"
+GRUB_DEFAULT="Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)"
 GRUB_TIMEOUT="30"
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet resume=UUID=4eeeef99-7670-4e1d-932c-a4e7bb90363d"
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
@@ -51,7 +51,7 @@ GRUB_THEME="/boot/grub/themes/starfield/theme.txt"
 
 # Uncomment to make GRUB remember the last selection. This requires to
 # set 'GRUB_DEFAULT=saved' above.
-#GRUB_SAVEDEFAULT="false"
-GRUB_DISABLE_SUBMENU=y
-#GRUB_DEFAULT=saved
-#GRUB_SAVEDEFAULT=true
+GRUB_SAVEDEFAULT="false"
+GRUB_DISABLE_SUBMENU="y"
+#GRUB_DEFAULT="saved"
+#GRUB_SAVEDEFAULT="true"

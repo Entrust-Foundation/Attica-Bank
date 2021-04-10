@@ -6,11 +6,12 @@ echo "### END /etc/grub.d/proxifiedScripts/linux ###";
 echo "### BEGIN /etc/grub.d/proxifiedScripts/custom ###";
 "/etc/grub.d/proxifiedScripts/custom";
 echo "### END /etc/grub.d/proxifiedScripts/custom ###";' | /etc/grub.d/bin/grubcfg_proxy "-*
+-'Arch Linux, with Linux linux-mzn (fallback initramfs)'~a4400f739e247b9b52e8a74c6c8e9bc1~
+-'Arch Linux, with Linux linux-lts'~13858636afef0c304d38bd63e67a2c66~
+-'Arch Linux, with Linux linux-lts (fallback initramfs)'~667522cb767b22def2e51864b14f0acb~
+-'Arch Linux, with Linux linux-ck-nehalem'~818aa1f6e88c8a88bddc9c22de1c69d5~
+-'Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)'~bdc52dd9ea27c3a5ea4b683de9ae5fed~
 -#text
--'Arch Linux'~745f5bd6de8cc9c9d9e04e589eeb2b02~
--'Advanced options for Arch Linux'/*
--'Advanced options for Arch Linux'/'Arch Linux, with Linux linux-mzn'~d1a2926a826237c2f2f8cfcb6089b0c2~
--'Advanced options for Arch Linux'/'Arch Linux, with Linux linux-ck-nehalem'~73425fe3648253bc4e510ba03a8b337f~
--'Advanced options for Arch Linux'/'Arch Linux, with Linux linux-lts'~9ba8b3f715d5249bc1f7f2b60f17a202~
-+'SUBMENU' as 'Advanced options for Arch Linux'{+'Advanced options for Arch Linux'/'Arch Linux, with Linux linux-mzn (fallback initramfs)'~8fb1a55482b645ec677a5a363458eadc~, +'Advanced options for Arch Linux'/'Arch Linux, with Linux linux-lts (fallback initramfs)'~40039e426816932c587b284252c975de~, +'Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)'~8488ec50be8c4928d0fb45eb239f7982~ from '/etc/grub.d/proxifiedScripts/custom', -'Advanced options for Arch Linux'/'Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)'~30adb49b8dfdeb47135c436540cb3fa8~}
+-'Arch Linux, with Linux linux-mzn'~745f5bd6de8cc9c9d9e04e589eeb2b02~ as 'Arch Linux'
++'SUBMENU' as 'Advanced options for Arch Linux'{+'Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)'~8488ec50be8c4928d0fb45eb239f7982~ from '/etc/grub.d/proxifiedScripts/custom'}
 " multi
