@@ -92,3 +92,20 @@ menuentry "Windows 10 Iso File"{
 	linux (loop)/casper/vmlinuz boot=casper iso-scan/filename="/Downloads/Windows.10.Enterprise.v1909.x64_p30download.com.part1/DVD Image/Win10-Ent-1909-x64.iso" quiet splash locale=en_US bootkbd=us console-setup/layoutcode=us noeject --
 	initrd (loop)/casper/initrd.lz
 }
+menuentry "Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)" --class arch --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-linux-ck-nehalem-fallback-9c389624-6de8-4655-bd69-430c48627691' {
+		load_video
+		set gfxpayload=keep
+		insmod gzio
+		insmod part_msdos
+		insmod btrfs
+		set root='hd0,msdos1'
+		if [ x$feature_platform_search_hint = xy ]; then
+		  search --no-floppy --fs-uuid --set=root --hint-ieee1275='ieee1275//disk@0,msdos1' --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1  9c389624-6de8-4655-bd69-430c48627691
+		else
+		  search --no-floppy --fs-uuid --set=root 9c389624-6de8-4655-bd69-430c48627691
+		fi
+		echo	'Loading Linux linux-ck-nehalem ...'
+		linux	/__active/root_arch/boot/vmlinuz-linux-ck-nehalem root=UUID=9c389624-6de8-4655-bd69-430c48627691 rw rootflags=subvol=__active/root_arch  loglevel=3 quiet resume=UUID=4eeeef99-7670-4e1d-932c-a4e7bb90363d
+		echo	'Loading initial ramdisk ...'
+		initrd	/__active/root_arch/boot/initramfs-linux-ck-nehalem-fallback.img 
+}
