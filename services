@@ -4076,6 +4076,7 @@ hydra            2374/tcp
 docker           2375/tcp
 docker-s         2376/tcp
 swarm            2377/tcp
+dali             2378/udp
 etcd-client      2379/tcp
 etcd-server      2380/tcp
 compaq-https     2381/tcp
@@ -5034,8 +5035,8 @@ ttg-protocol     2862/tcp
 ttg-protocol     2862/udp
 sonardata        2863/tcp
 sonardata        2863/udp
-astromed-main    2864/tcp
-astromed-main    2864/udp
+astronova-main   2864/tcp
+astronova-main   2864/udp
 pit-vpn          2865/tcp
 pit-vpn          2865/udp
 iwlistener       2866/tcp
@@ -7226,8 +7227,6 @@ secure-cfg-svr   3978/tcp
 secure-cfg-svr   3978/udp
 smwan            3979/tcp
 smwan            3979/udp
-acms             3980/tcp
-acms             3980/udp
 starfish         3981/tcp
 starfish         3981/udp
 eis              3982/tcp
@@ -7629,6 +7628,10 @@ dsmipv6          4191/udp
 azeti            4192/tcp
 azeti-bd         4192/udp
 pvxplusio        4193/tcp
+aws-wsp          4195/tcp
+aws-wsp          4195/udp
+aws-wsp          4195/sctp
+aws-wsp          4195/dccp
 hctl             4197/tcp
 hctl             4197/udp
 eims-admin       4199/tcp
@@ -7660,6 +7663,7 @@ pscl-mgt         4312/tcp
 perrla           4313/tcp
 choiceview-agt   4314/tcp
 choiceview-clt   4316/tcp
+opentelemetry    4317/tcp
 fdt-rcatp        4320/tcp
 fdt-rcatp        4320/udp
 rwhois           4321/tcp
@@ -7846,6 +7850,7 @@ prRegister       4457/tcp
 prRegister       4457/udp
 mcp              4458/tcp
 mcp              4458/udp
+ntske            4460/tcp
 hpssmgmt         4484/tcp
 hpssmgmt         4484/udp
 assyst-dr        4485/tcp
@@ -7931,7 +7936,10 @@ mtsserver        4602/tcp
 menandmice-upg   4603/tcp
 irp              4604/tcp
 sixchat          4605/tcp
+sixid            4606/tcp
 ventoso          4621/udp
+dots-signal      4646/tcp
+dots-signal      4646/udp
 playsta2-app     4658/tcp
 playsta2-app     4658/udp
 playsta2-lob     4659/tcp
@@ -9116,6 +9124,7 @@ nim-vdrshell     6420/udp
 nim-wan          6421/tcp
 nim-wan          6421/udp
 pgbouncer        6432/tcp
+heliosd          6440/tcp
 tarp             6442/tcp
 sun-sr-https     6443/tcp
 sun-sr-https     6443/udp
@@ -9194,6 +9203,7 @@ fg-sysupdate     6550/tcp
 fg-sysupdate     6550/udp
 sum              6551/tcp
 sum              6551/udp
+checkmk-agent    6556/tcp
 xdsxdm           6558/tcp
 xdsxdm           6558/udp
 sane-port        6566/tcp
@@ -9264,6 +9274,7 @@ tsa              6689/udp
 cleverdetect     6690/tcp
 babel            6696/udp
 ircs-u           6697/tcp
+babel-dtls       6699/udp
 kti-icad-srvr    6701/tcp
 kti-icad-srvr    6701/udp
 e-design-net     6702/tcp
@@ -9321,6 +9332,8 @@ muse             6888/tcp
 muse             6888/udp
 rtimeviewer      6900/tcp
 jetstream        6901/tcp
+split-ping       6924/tcp
+split-ping       6924/udp
 ethoscan         6935/tcp
 ethoscan         6935/udp
 xsmsvc           6936/tcp
@@ -9468,6 +9481,7 @@ ramp             7227/tcp
 ramp             7227/udp
 citrixupp        7228/tcp
 citrixuppg       7229/tcp
+asa-gateways     7234/tcp
 aspcoordination  7235/udp
 display          7236/tcp
 pads             7237/tcp
@@ -9766,6 +9780,8 @@ ca-audit-da      8025/tcp
 ca-audit-da      8025/udp
 ca-audit-ds      8026/tcp
 ca-audit-ds      8026/udp
+papachi-p2p-srv  8027/tcp
+papachi-p2p-srv  8027/udp
 pro-ed           8032/tcp
 pro-ed           8032/udp
 mindprint        8033/tcp
@@ -10005,6 +10021,7 @@ sun-as-jmxrmi    8686/tcp
 sun-as-jmxrmi    8686/udp
 openremote-ctrl  8688/tcp
 vnyx             8699/tcp
+semi-grpc        8710/tcp
 nvc              8711/tcp
 dtp-net          8732/udp
 ibus             8733/tcp
@@ -10065,6 +10082,7 @@ jmb-cds1         8900/tcp
 jmb-cds1         8900/udp
 jmb-cds2         8901/tcp
 jmb-cds2         8901/udp
+dpp              8908/tcp
 manyone-http     8910/tcp
 manyone-http     8910/udp
 manyone-xml      8911/tcp
@@ -10254,6 +10272,7 @@ armcenterhttps   9295/udp
 vrace            9300/tcp
 vrace            9300/udp
 sphinxql         9306/tcp
+sapms            9310/tcp
 sphinxapi        9312/tcp
 secure-ts        9318/tcp
 secure-ts        9318/udp
@@ -10303,6 +10322,7 @@ laes-bf          9536/tcp
 laes-bf          9536/udp
 trispen-sra      9555/tcp
 trispen-sra      9555/udp
+p4runtime        9559/tcp
 ldgateway        9592/tcp
 ldgateway        9592/udp
 cba8             9593/tcp
@@ -10444,6 +10464,7 @@ swdtp-sv        10009/tcp
 swdtp-sv        10009/udp
 rxapi           10010/tcp
 abb-hw          10020/tcp
+cefd-vmp        10023/udp
 zabbix-agent    10050/tcp
 zabbix-agent    10050/udp
 zabbix-trapper  10051/tcp
@@ -10502,6 +10523,7 @@ blocks          10288/tcp
 blocks          10288/udp
 cosir           10321/tcp
 bngsync         10439/udp
+cirrossp        10443/tcp
 hip-nat-t       10500/udp
 MOS-lower       10540/tcp
 MOS-lower       10540/udp
@@ -10532,7 +10554,6 @@ irisa           11000/tcp
 irisa           11000/udp
 metasys         11001/tcp
 metasys         11001/udp
-cefd-vmp        10023/udp
 weave           11095/tcp
 weave           11095/udp
 origo-sync      11103/tcp
@@ -10569,6 +10590,8 @@ wifree          11208/tcp
 wifree          11208/udp
 memcache        11211/tcp
 memcache        11211/udp
+xcompute        11235/tcp
+xcompute        11235/sctp
 imip            11319/tcp
 imip            11319/udp
 imip-channels   11320/tcp
@@ -10840,6 +10863,7 @@ gv-pf           18262/tcp
 gv-pf           18262/udp
 ac-cluster      18463/tcp
 ac-cluster      18463/udp
+heythings       18516/udp
 rds-ib          18634/tcp
 rds-ib          18634/udp
 rds-ip          18635/tcp
@@ -10882,6 +10906,7 @@ sxuptp          19540/udp
 jcp             19541/tcp
 jcp             19541/udp
 mle             19788/udp
+faircom-db      19790/tcp
 iec-104-sec     19998/tcp
 dnp-sec         19999/tcp
 dnp-sec         19999/udp
@@ -10963,6 +10988,8 @@ wnn6            22273/tcp
 wnn6            22273/udp
 cis             22305/tcp
 cis             22305/udp
+showcockpit-net 22333/tcp
+showcockpit-net 22333/udp
 shrewd-control  22335/tcp
 shrewd-stream   22335/udp
 cis-secure      22343/tcp
@@ -11130,6 +11157,7 @@ voxelstorm      28200/udp
 siemensgsm      28240/tcp
 siemensgsm      28240/udp
 bosswave        28589/tcp
+saltd-licensing 29000/tcp
 sgsap           29118/sctp
 otmp            29167/tcp
 otmp            29167/udp
@@ -11208,6 +11236,7 @@ mlsn            32801/udp
 retp            32811/tcp
 idmgratm        32896/tcp
 idmgratm        32896/udp
+wg-endpt-comms  33000/tcp
 mysqlx          33060/tcp
 aurora-balaena  33123/tcp
 aurora-balaena  33123/udp
@@ -11221,6 +11250,7 @@ traceroute      33434/udp
 mtrace          33435/udp
 snip-slave      33656/tcp
 snip-slave      33656/udp
+digilent-adept  33890/tcp
 turbonote-2     34249/tcp
 turbonote-2     34249/udp
 p-net-local     34378/tcp
@@ -11268,6 +11298,7 @@ observium-agent 36602/tcp
 mapx            36700/tcp
 kastenxpipe     36865/tcp
 kastenxpipe     36865/udp
+3gpp-w1ap       37472/sctp
 neckar          37475/tcp
 neckar          37475/udp
 gdrive-sync     37483/tcp

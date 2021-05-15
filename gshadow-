@@ -12,7 +12,7 @@ wheel:::root,mojtaba
 ftp:::
 mail:::
 uucp:::
-log:::root
+log:::root,mojtaba
 utmp:x::
 locate:::
 rfkill:x::
@@ -68,3 +68,5 @@ dhcp:!!::
 geoclue:!!::
 privoxy:!!::
 xmms2:!!::
+sgx:!*::
+systemd-oom:!*::

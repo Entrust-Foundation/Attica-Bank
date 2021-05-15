@@ -1,12 +1,13 @@
 [Desktop Entry]
 Type=Application
-Name=Desktop
 Exec=pcmanfm-qt --desktop --profile=lxqt
 TryExec=pcmanfm-qt
 OnlyShowIn=LXQt;
 X-LXQt-Module=true
 
+Name=Desktop
 Name[ar]=سطح المكتب
+Name[bg]=Работен плот
 Name[cs]=Plocha
 Name[da]=Skrivebord
 Name[de]=Arbeitsfläche
@@ -14,23 +15,26 @@ Name[el]=Επιφάνεια εργασίας
 Name[eo]=Labortablo
 Name[es]=Escritorio
 Name[es_VE]=Escritorio
+Name[et]=Töölaud
 Name[eu]=Mahaigaina
 Name[fi]=Työpöytä
 Name[fr]=Bureau
+Name[gl]=Escritorio
+Name[he]=שולחן עבודה
+Name[hr]=Radna površina
 Name[hu]=Asztal
 Name[ia]=Scriptorio
-Name[it_IT]=Desktop
+Name[it]=Scrivania
 Name[ja]=デスクトップ
 Name[lt]=Darbalaukis
 Name[nl]=Bureaublad
-Name[pl_PL]=Pulpit
-Name[pt]=Área de trabalho
+Name[pl]=Pulpit
+Name[pt]=Ambiente de trabalho
 Name[pt_BR]=Área de trabalho
-Name[ro_RO]=Desktop
+Name[ro]=Desktop
 Name[ru]=Pабочий стол
-Name[ru_RU]=Рабочий стол
 Name[sl]=Namizje
-Name[th_TH]=เดสก์ท็อป
+Name[th]=เดสก์ท็อป
 Name[tr]=Masaüstü
 Name[uk]=Стільниця
 Name[zh_CN]=桌面
