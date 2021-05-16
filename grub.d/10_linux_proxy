@@ -1,11 +1,11 @@
 #!/bin/sh
 #THIS IS A GRUB PROXY SCRIPT
 '/etc/grub.d/proxifiedScripts/linux' | /etc/grub.d/bin/grubcfg_proxy "+*
-+'Arch Linux, with Linux linux-mzn (fallback initramfs)'~a4400f739e247b9b52e8a74c6c8e9bc1~
-+'Arch Linux, with Linux linux-lts'~13858636afef0c304d38bd63e67a2c66~
-+'Arch Linux, with Linux linux-lts (fallback initramfs)'~667522cb767b22def2e51864b14f0acb~
-+'Arch Linux, with Linux linux-ck-nehalem'~818aa1f6e88c8a88bddc9c22de1c69d5~
-+'Arch Linux, with Linux linux-ck-nehalem (fallback initramfs)'~bdc52dd9ea27c3a5ea4b683de9ae5fed~
++'Arch Linux, with Linux linux-ck'~67ec9c65879378cda5dc53e25e61b82d~
++'Arch Linux, with Linux linux-ck (fallback initramfs)'~e0814ff7ef88008b923ca42b92c2f799~
++'Arch Linux, with Linux linux'~d91343270bea2db24a6209bbd16af6ad~
++'Arch Linux, with Linux linux (fallback initramfs)'~f0682c4c5c1d3f08969b4ac1078d1d11~
++'Arch Linux, with Linux linux-lts'~7aa14c89e7b864d60080a8e9f47121c3~
++'Arch Linux, with Linux linux-lts (fallback initramfs)'~ce6962b6dcb70969f644cd33050aa89c~
 +#text
-+'Arch Linux, with Linux linux-mzn'~745f5bd6de8cc9c9d9e04e589eeb2b02~ as 'Arch Linux'
 "
