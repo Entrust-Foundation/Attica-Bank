@@ -75,3 +75,4 @@ deepin_anything_server:x:987:
 deepin-daemon:x:986:
 deepin-sound-player:x:985:
 dhcpcd:x:984:
+adbusers:x:983:

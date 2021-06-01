@@ -70,3 +70,8 @@ privoxy:!!::
 xmms2:!!::
 sgx:!*::
 systemd-oom:!*::
+deepin-anything-server:!*::
+deepin_anything_server:!*::
+deepin-daemon:!*::
+deepin-sound-player:!*::
+dhcpcd:!*::
