@@ -1,6 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=Xfce Settings Daemon
+Name[ar]=عفريت إعدادات Xfce
 Name[be]=Дэман налад Xfce
 Name[be@tarask]=Сэрвіс наладаў Xfce
 Name[bg]=Демон за настройките на Xfce
@@ -38,6 +39,7 @@ Name[sl]=Pritajene Xfce nastavitve
 Name[sq]=Demoni Xfce i Rregullimeve
 Name[sr]=Домар поставки ИксФЦЕ-а
 Name[sv]=Konfigurationsdemon för Xfce
+Name[th]=ดีมอนค่าตั้งของ Xfce
 Name[tr]=Xfce Ayarlar Süreci
 Name[uk]=Служба налаштування Xfce
 Name[zh_CN]=Xfce 设置守护进程
